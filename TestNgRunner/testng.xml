@@ -6,6 +6,7 @@ version="1.0" encoding="UTF-8"?>
     <classes>
       <class name="restAssured.RestAssured"/>
       <class name="restAssuredDemo.Rest"/>
+      <class name="restAssured.RestAuthentication"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

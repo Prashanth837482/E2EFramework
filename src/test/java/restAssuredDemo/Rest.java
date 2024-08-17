@@ -120,7 +120,7 @@ public class Rest {
 		System.out.println("Updated At :"+path.getString("updatedAt"));
 		
 		// when assertion fails it throws assertion error and execution of this test method will stop.
-		Assert.assertEquals(200, response.getStatusCode(),"Resource Not Updated or Resource Created");
+		Assert.assertEquals(201, response.getStatusCode(),"Resource Not Updated or Resource Created");
 		
 		System.out.println("Created At :"+path.getString("CreatedAt"));
 	
