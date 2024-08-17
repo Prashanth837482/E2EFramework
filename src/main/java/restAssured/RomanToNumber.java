@@ -27,7 +27,7 @@ public class RomanToNumber {
     
     for(int i =0; i < length ; i++) {
     	
-    	if(i!=length && roman.get(InputRoman.charAt(i)) < roman.get(InputRoman.charAt(i+1))) {
+    	if(i!=length-1 && roman.get(InputRoman.charAt(i)) < roman.get(InputRoman.charAt(i+1))) {
     		
     		number+= roman.get(InputRoman.charAt(i+1))-roman.get(InputRoman.charAt(i));
     		i++;
