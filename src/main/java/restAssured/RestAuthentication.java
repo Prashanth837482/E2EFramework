@@ -37,7 +37,7 @@ public class RestAuthentication {
 	public void bearerTokenAuth() {
 		
 		// generate the bearer token @ https://github.com/settings/tokens use classic
-		String bearerToken="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";
+		String bearerToken="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";
 		
 		//using github API URI
 		RestAssured.baseURI="https://api.github.com/user/repos";
@@ -66,7 +66,7 @@ public class RestAuthentication {
 	public void OAuth2() {
 		
 		// generate the bearer token @ https://github.com/settings/tokens use classic
-		String bearerToken="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";
+		String bearerToken="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";
 		
 		//using github API URI
 		RestAssured.baseURI="https://api.github.com/user/repos";

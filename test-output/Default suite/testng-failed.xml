@@ -6,6 +6,7 @@
       <class name="restAssured.RestAuthentication">
         <methods>
           <include name="bearerTokenAuth"/>
+          <include name="OAuth2"/>
         </methods>
       </class> <!-- restAssured.RestAuthentication -->
     </classes>
