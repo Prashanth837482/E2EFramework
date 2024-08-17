@@ -1,6 +1,7 @@
 package restAssuredDemo;
 
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.google.gson.JsonObject;
@@ -13,13 +14,16 @@ import io.restassured.specification.RequestSpecification;
 
 public class Rest {
 
-	@Test()
+	@Test(priority = 0)
 	public void restCheck() {
 		RestAssured.baseURI="https://reqres.in/";
 		RequestSpecification req= RestAssured.given().header("content-type","application/json");
 		
 		Response res=req.get("api/users/2");
 		System.out.println(res.asString());
+		
+		Assert.assertEquals(200, res.getStatusCode(),"Incorrect Status");
+		
 		System.out.println(res.getStatusCode()+" "+res.getStatusLine());
 		System.out.println(res.getBody().asString());
 		System.out.println(res.getContentType());
@@ -31,7 +35,7 @@ public class Rest {
 		System.out.println(path.getString("data.id"));  // first give parent then "." and child node for accessing that element
 	}
 	
-	@Test()
+	@Test(priority = 1)
 	public void GetJsonArrayData() {
 		RestAssured.baseURI="https://reqres.in/";
 		RequestSpecification req= RestAssured.given().header("content-type","application/json");
@@ -48,7 +52,7 @@ public class Rest {
 	
 	
 	
-	@Test()
+	@Test(priority = 2)
 	public void PostMethod() {
 		
 		RestAssured.baseURI="https://reqres.in/";
@@ -70,11 +74,13 @@ public class Rest {
 		System.out.println("Generated Resource Id :"+path.getString("id"));
 		System.out.println("Created At :"+path.getString("createdAt"));
 		
+		Assert.assertEquals(201, response.getStatusCode(),"Resource Not Created");
+		
 		
 	}
 	
 	
-	@Test()
+	@Test(priority = 4)
 	public void PutMethod() {
 	
 		// we should send full representation of the object for updating resource through put method.
@@ -112,14 +118,19 @@ public class Rest {
 		
 		System.out.println("Updated Resource Id :"+path.getString("data.id"));
 		System.out.println("Updated At :"+path.getString("updatedAt"));
+		
+		// when assertion fails it throws assertion error and execution of this test method will stop.
+		Assert.assertEquals(200, response.getStatusCode(),"Resource Not Updated or Resource Created");
+		
+		System.out.println("Created At :"+path.getString("CreatedAt"));
 	
 	}
 	
 	
-	@Test()
+	@Test(priority = 3)
 	public void DeleteMethod() {
 	
-		// we should send full representation of the object for updating resource through put method.
+		
 		
 		RestAssured.baseURI="https://reqres.in/";
 		
