@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="10.296" tests="19" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="11.115" tests="19" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\VANGAP~1\AppData\Local\Temp\surefire14297666893517850181\surefirebooter16904141847072184839.jar C:\Users\VANGAPELLI PRASHANTH\AppData\Local\Temp\surefire14297666893517850181 2024-08-18T12-28-15_466-jvmRun1 surefire817466444391981870tmp surefire_05480990688307646846tmp"/>
+    <property name="sun.java.command" value="C:\Users\VANGAP~1\AppData\Local\Temp\surefire17915120633558404024\surefirebooter298919194744303823.jar C:\Users\VANGAPELLI PRASHANTH\AppData\Local\Temp\surefire17915120633558404024 2024-08-18T12-40-33_284-jvmRun1 surefire1477531290027346291tmp surefire_05288688987930478195tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\AutomationJava\workspace\RestAssured\123\target\test-classes;C:\AutomationJava\workspace\RestAssured\123\target\classes;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\VANGAPELLI PRASHANTH\.m2\repository\org\json\json\20240303\json-20240303.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\VANGAP~1\AppData\Local\Temp\surefire14297666893517850181\surefirebooter16904141847072184839.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\VANGAP~1\AppData\Local\Temp\surefire17915120633558404024\surefirebooter298919194744303823.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17+35-LTS-2724"/>
@@ -57,29 +57,29 @@
     <property name="java.class.version" value="61.0"/>
   </properties>
   <testcase name="testing" classname="restAssured.RestAssured" time="0.005"/>
-  <testcase name="restCheck" classname="restAssuredDemo.Rest" time="1.991"/>
-  <testcase name="GetJsonArrayData" classname="restAssuredDemo.Rest" time="0.286"/>
-  <testcase name="PostMethod" classname="restAssuredDemo.Rest" time="0.721"/>
-  <testcase name="DeleteMethod" classname="restAssuredDemo.Rest" time="0.614"/>
-  <testcase name="PutMethod" classname="restAssuredDemo.Rest" time="0.685"/>
-  <testcase name="restBasicAuthentication" classname="restAssured.RestAuthentication" time="2.212"/>
-  <testcase name="bearerTokenAuth" classname="restAssured.RestAuthentication" time="0.655">
+  <testcase name="restCheck" classname="restAssuredDemo.Rest" time="2.673"/>
+  <testcase name="GetJsonArrayData" classname="restAssuredDemo.Rest" time="0.36"/>
+  <testcase name="PostMethod" classname="restAssuredDemo.Rest" time="0.806"/>
+  <testcase name="DeleteMethod" classname="restAssuredDemo.Rest" time="0.618"/>
+  <testcase name="PutMethod" classname="restAssuredDemo.Rest" time="0.698"/>
+  <testcase name="restBasicAuthentication" classname="restAssured.RestAuthentication" time="2.205"/>
+  <testcase name="bearerTokenAuth" classname="restAssured.RestAuthentication" time="0.639">
     <failure message="Request failed expected [401] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: Request failed expected [401] but found [200]
 	at restAssured.RestAuthentication.bearerTokenAuth(RestAuthentication.java:54)
 </failure>
   </testcase>
-  <testcase name="OAuth2" classname="restAssured.RestAuthentication" time="0.613">
+  <testcase name="OAuth2" classname="restAssured.RestAuthentication" time="0.618">
     <failure message="Request failed expected [401] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: Request failed expected [401] but found [200]
 	at restAssured.RestAuthentication.OAuth2(RestAuthentication.java:84)
 </failure>
   </testcase>
-  <testcase name="restBasicAuthenticationWithGivenWhen" classname="restAssured.RestAuthentication" time="1.902"/>
+  <testcase name="restBasicAuthenticationWithGivenWhen" classname="restAssured.RestAuthentication" time="1.864"/>
+  <testcase name="dataProviderTest" classname="testNG.TestNgAnnotations" time="0.001"/>
   <testcase name="dataProviderTest" classname="testNG.TestNgAnnotations" time="0"/>
-  <testcase name="dataProviderTest" classname="testNG.TestNgAnnotations" time="0"/>
-  <testcase name="dependsOnMethods" classname="testNG.TestNgAnnotations" time="0.001"/>
-  <testcase name="invocationCount" classname="testNG.TestNgAnnotations" time="0"/>
-  <testcase name="invocationCount" classname="testNG.TestNgAnnotations" time="0"/>
-  <testcase name="invocationCount" classname="testNG.TestNgAnnotations" time="0"/>
+  <testcase name="dependsOnMethods" classname="testNG.TestNgAnnotations" time="0"/>
+  <testcase name="invocationCount" classname="testNG.TestNgAnnotations" time="0.001"/>
+  <testcase name="invocationCount" classname="testNG.TestNgAnnotations" time="0.001"/>
+  <testcase name="invocationCount" classname="testNG.TestNgAnnotations" time="0.001"/>
   <testcase name="parameters" classname="testNG.TestNgAnnotations" time="0"/>
   <testcase name="parametersOptional" classname="testNG.TestNgAnnotations" time="0.001"/>
   <testcase name="enabled" classname="testNG.TestNgAnnotations" time="0"/>
