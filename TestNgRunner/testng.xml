@@ -2,11 +2,23 @@
 version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<parameter name="browser" value="chrome">  </parameter>
+<parameter name="URL" value="chrome.exe">  </parameter>
   <test thread-count="5" name="Test">
-    <classes>
-      <class name="restAssured.RestAssured"/>
+  <!--  This is the code for executing group attribute by including excluding the respective group name
+  		if this is used we can only run that satisfies the condition and won't runs the classes tag files
+  	<groups>
+  		<run>  	
+  			<include name="Notest"></include>
+  			<exclude name="test"></exclude>
+  		</run>
+  	</groups>
+  -->		
+    <classes>    
+      <class name="restAssured.RestAssured"/>      
       <class name="restAssuredDemo.Rest"/>
       <class name="restAssured.RestAuthentication"/>
+      <class name="testNG.TestNgAnnotations"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

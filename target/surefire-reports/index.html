@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">19 methods, 2 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="restAssured.RestAuthentication" class="method navigator-link" hash-for-method="OAuth2">OAuth2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="restAssured.RestAuthentication" class="method navigator-link" hash-for-method="bearerTokenAuth">bearerTokenAuth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,11 +132,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="restAssured.RestAuthentication" class="method navigator-link" hash-for-method="OAuth2">OAuth2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="restAssuredDemo.Rest" class="method navigator-link" hash-for-method="PostMethod">PostMethod</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -128,7 +142,47 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="restAssured.RestAuthentication" class="method navigator-link" hash-for-method="bearerTokenAuth">bearerTokenAuth</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestNgAnnotations" class="method navigator-link" hash-for-method="dataProviderTest(prash, password1)">dataProviderTest(prash, password1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestNgAnnotations" class="method navigator-link" hash-for-method="dataProviderTest(prashanth, password2)">dataProviderTest(prashanth, password2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestNgAnnotations" class="method navigator-link" hash-for-method="dependsOnMethods">dependsOnMethods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestNgAnnotations" class="method navigator-link" hash-for-method="enabled">enabled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestNgAnnotations" class="method navigator-link" hash-for-method="invocationCount">invocationCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestNgAnnotations" class="method navigator-link" hash-for-method="invocationCount">invocationCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestNgAnnotations" class="method navigator-link" hash-for-method="invocationCount">invocationCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestNgAnnotations" class="method navigator-link" hash-for-method="parameters(chrome, chrome.exe)">parameters(chrome, chrome.exe)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testNG.TestNgAnnotations" class="method navigator-link" hash-for-method="parametersOptional(chrome, chrome.exe, www.google.com)">parametersOptional(chrome, chrome.exe, www.google.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -163,6 +217,38 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">restAssured.RestAuthentication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OAuth2">
+                  </a> <!-- OAuth2 -->
+                  <span class="method-name">OAuth2</span>
+                  <div class="stack-trace">java.lang.AssertionError: Request failed expected [401] but found [200]
+	at restAssured.RestAuthentication.OAuth2(RestAuthentication.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bearerTokenAuth">
+                  </a> <!-- bearerTokenAuth -->
+                  <span class="method-name">bearerTokenAuth</span>
+                  <div class="stack-trace">java.lang.AssertionError: Request failed expected [401] but found [200]
+	at restAssured.RestAuthentication.bearerTokenAuth(RestAuthentication.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -186,20 +272,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="OAuth2">
-                  </a> <!-- OAuth2 -->
-                  <span class="method-name">OAuth2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="bearerTokenAuth">
-                  </a> <!-- bearerTokenAuth -->
-                  <span class="method-name">bearerTokenAuth</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="restBasicAuthentication">
                   </a> <!-- restBasicAuthentication -->
                   <span class="method-name">restBasicAuthentication</span>
@@ -210,6 +282,81 @@
                   <a name="restBasicAuthenticationWithGivenWhen">
                   </a> <!-- restBasicAuthenticationWithGivenWhen -->
                   <span class="method-name">restBasicAuthenticationWithGivenWhen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testNG.TestNgAnnotations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataProviderTest(prash, password1)">
+                  </a> <!-- dataProviderTest(prash, password1) -->
+                  <span class="method-name">dataProviderTest</span>
+                  <span class="parameters">(prash,password1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataProviderTest(prashanth, password2)">
+                  </a> <!-- dataProviderTest(prashanth, password2) -->
+                  <span class="method-name">dataProviderTest</span>
+                  <span class="parameters">(prashanth,password2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dependsOnMethods">
+                  </a> <!-- dependsOnMethods -->
+                  <span class="method-name">dependsOnMethods</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enabled">
+                  </a> <!-- enabled -->
+                  <span class="method-name">enabled</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invocationCount">
+                  </a> <!-- invocationCount -->
+                  <span class="method-name">invocationCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invocationCount">
+                  </a> <!-- invocationCount -->
+                  <span class="method-name">invocationCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invocationCount">
+                  </a> <!-- invocationCount -->
+                  <span class="method-name">invocationCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="parameters(chrome, chrome.exe)">
+                  </a> <!-- parameters(chrome, chrome.exe) -->
+                  <span class="method-name">parameters</span>
+                  <span class="parameters">(chrome,chrome.exe)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="parametersOptional(chrome, chrome.exe, www.google.com)">
+                  </a> <!-- parametersOptional(chrome, chrome.exe, www.google.com) -->
+                  <span class="method-name">parametersOptional</span>
+                  <span class="parameters">(chrome,chrome.exe,www.google.com)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,11 +414,14 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;URL&quot; value=&quot;chrome.exe&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;restAssured.RestAssured&quot;/&gt;
       &lt;class name=&quot;restAssuredDemo.Rest&quot;/&gt;
       &lt;class name=&quot;restAssured.RestAuthentication&quot;/&gt;
+      &lt;class name=&quot;testNG.TestNgAnnotations&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -285,7 +435,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,6 +445,30 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Notest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">parameters</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">parametersOptional</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">test</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">dependsOnMethods</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invocationCount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -311,52 +485,88 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(19);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'restCheck')
-data.setCell(0, 2, 'restAssuredDemo.Rest')
-data.setCell(0, 3, 2384);
+data.setCell(0, 1, 'restBasicAuthentication')
+data.setCell(0, 2, 'restAssured.RestAuthentication')
+data.setCell(0, 3, 2212);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'restBasicAuthentication')
-data.setCell(1, 2, 'restAssured.RestAuthentication')
-data.setCell(1, 3, 2240);
+data.setCell(1, 1, 'restCheck')
+data.setCell(1, 2, 'restAssuredDemo.Rest')
+data.setCell(1, 3, 1991);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'restBasicAuthenticationWithGivenWhen')
 data.setCell(2, 2, 'restAssured.RestAuthentication')
-data.setCell(2, 3, 2168);
+data.setCell(2, 3, 1900);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'bearerTokenAuth')
-data.setCell(3, 2, 'restAssured.RestAuthentication')
-data.setCell(3, 3, 682);
+data.setCell(3, 1, 'PostMethod')
+data.setCell(3, 2, 'restAssuredDemo.Rest')
+data.setCell(3, 3, 722);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'PutMethod')
 data.setCell(4, 2, 'restAssuredDemo.Rest')
-data.setCell(4, 3, 663);
+data.setCell(4, 3, 685);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'OAuth2')
+data.setCell(5, 1, 'bearerTokenAuth')
 data.setCell(5, 2, 'restAssured.RestAuthentication')
-data.setCell(5, 3, 654);
+data.setCell(5, 3, 651);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'DeleteMethod')
 data.setCell(6, 2, 'restAssuredDemo.Rest')
-data.setCell(6, 3, 631);
+data.setCell(6, 3, 613);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'PostMethod')
-data.setCell(7, 2, 'restAssuredDemo.Rest')
-data.setCell(7, 3, 629);
+data.setCell(7, 1, 'OAuth2')
+data.setCell(7, 2, 'restAssured.RestAuthentication')
+data.setCell(7, 3, 613);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'GetJsonArrayData')
 data.setCell(8, 2, 'restAssuredDemo.Rest')
-data.setCell(8, 3, 375);
+data.setCell(8, 3, 287);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'testing')
 data.setCell(9, 2, 'restAssured.RestAssured')
-data.setCell(9, 3, 3);
+data.setCell(9, 3, 5);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'invocationCount')
+data.setCell(10, 2, 'testNG.TestNgAnnotations')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'invocationCount')
+data.setCell(11, 2, 'testNG.TestNgAnnotations')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'parameters')
+data.setCell(12, 2, 'testNG.TestNgAnnotations')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'dependsOnMethods')
+data.setCell(13, 2, 'testNG.TestNgAnnotations')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'invocationCount')
+data.setCell(14, 2, 'testNG.TestNgAnnotations')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'dataProviderTest')
+data.setCell(15, 2, 'testNG.TestNgAnnotations')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'enabled')
+data.setCell(16, 2, 'testNG.TestNgAnnotations')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'dataProviderTest')
+data.setCell(17, 2, 'testNG.TestNgAnnotations')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'parametersOptional')
+data.setCell(18, 2, 'testNG.TestNgAnnotations')
+data.setCell(18, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -392,42 +602,85 @@ return data;
               <div class="chronological-class-name">restAssuredDemo.Rest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">restCheck</span>
-                <span class="method-start">6 ms</span>
+                <span class="method-start">9 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GetJsonArrayData</span>
-                <span class="method-start">2390 ms</span>
+                <span class="method-start">2001 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PostMethod</span>
-                <span class="method-start">2765 ms</span>
+                <span class="method-start">2288 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DeleteMethod</span>
-                <span class="method-start">3394 ms</span>
+                <span class="method-start">3011 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">PutMethod</span>
-                <span class="method-start">4025 ms</span>
+                <span class="method-start">3626 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">restAssured.RestAuthentication</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">restBasicAuthentication</span>
-                <span class="method-start">4688 ms</span>
+                <span class="method-start">4312 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">bearerTokenAuth</span>
-                <span class="method-start">6928 ms</span>
+                <span class="method-start">6524 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">OAuth2</span>
-                <span class="method-start">7619 ms</span>
+                <span class="method-start">7179 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">restBasicAuthenticationWithGivenWhen</span>
-                <span class="method-start">8273 ms</span>
+                <span class="method-start">7793 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testNG.TestNgAnnotations</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dataProviderTest(prash, password1)</span>
+                <span class="method-start">9697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dataProviderTest(prashanth, password2)</span>
+                <span class="method-start">9698 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dependsOnMethods</span>
+                <span class="method-start">9701 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invocationCount</span>
+                <span class="method-start">9712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invocationCount</span>
+                <span class="method-start">9713 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">invocationCount</span>
+                <span class="method-start">9713 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">parameters(chrome, chrome.exe)</span>
+                <span class="method-start">9716 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">parametersOptional(chrome, chrome.exe, www.google.com)</span>
+                <span class="method-start">9719 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enabled</span>
+                <span class="method-start">9720 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

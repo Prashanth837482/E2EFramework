@@ -117,7 +117,7 @@ public class Rest {
 		JsonPath path = response.jsonPath();
 		
 		System.out.println("Updated Resource Id :"+path.getString("data.id"));
-		System.out.println("Updated At :"+path.getString("updatedAt"));
+		System.out.println("Updated At :"+path.getString("UpdatedAt"));
 		
 		// when assertion fails it throws assertion error and execution of this test method will stop.
 		Assert.assertEquals(201, response.getStatusCode(),"Resource Not Updated or Resource Created");
