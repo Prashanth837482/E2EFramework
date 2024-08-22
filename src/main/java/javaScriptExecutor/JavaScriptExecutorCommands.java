@@ -20,7 +20,9 @@ public class JavaScriptExecutorCommands {
 		try {	
 			System.setProperty("webdriver.chrome.driver", "C:\\AutomationJava\\Software\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 			driver= new ChromeDriver();
-			driver.get("https://in.search.yahoo.com/search?fr=mcafee&type=E210IN826G0&p=google");		
+			driver.get("https://in.search.yahoo.com/search?fr=mcafee&type=E210IN826G0&p=google");	
+			driver.manage().window().maximize();
+			System.out.println("Window maximized successfully.");
 			Thread.sleep(5000);
 			
 		}
@@ -45,8 +47,16 @@ public class JavaScriptExecutorCommands {
 		WebElement detectAgainElement= driver.findElement(By.xpath("//a[text()='Detect again']"));
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		// js code to scroll to a particular element
 		js.executeScript("arguments[0].scrollIntoView(true);", detectAgainElement);
-		Thread.sleep(5000);
+		System.out.println("Successfully Scrolled to the element");
+		Thread.sleep(3000);
+		
+		// js code to highlight an element
+		js.executeScript("arguments[0].style.border='3px solid red'", detectAgainElement);
+		System.out.println("Successfully highlighted the element");
+		Thread.sleep(3000);
 		
 		} 
 		
