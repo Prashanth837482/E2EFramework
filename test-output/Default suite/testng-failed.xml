@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.TestNgAnnotations">
+      <class name="testNG.ListenerTestCaseClass">
         <methods>
-          <include name="parametersOptional"/>
-          <include name="parameters"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="failMethod"/>
+          <include name="skipMethod"/>
         </methods>
-      </class> <!-- testNG.TestNgAnnotations -->
+      </class> <!-- testNG.ListenerTestCaseClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
