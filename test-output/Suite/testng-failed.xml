@@ -3,14 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
   <parameter name="URL" value="chrome.exe"/>
+  <listeners>
+    <listener class-name="testNG.ExtentReportManager"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="restAssured.RestAuthentication">
+      <class name="testNG.ListenerTestCaseClass">
         <methods>
-          <include name="bearerTokenAuth"/>
-          <include name="OAuth2"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="passMethod"/>
+          <include name="failMethod"/>
+          <include name="skipMethod"/>
         </methods>
-      </class> <!-- restAssured.RestAuthentication -->
+      </class> <!-- testNG.ListenerTestCaseClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

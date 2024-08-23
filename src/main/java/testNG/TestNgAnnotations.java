@@ -5,9 +5,11 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 
 
-public class TestNgAnnotations {
+
+public class TestNgAnnotations{
 	
 	@Test(groups = "Notest")
 	@Parameters({"browser","URL"})
@@ -16,6 +18,7 @@ public class TestNgAnnotations {
 		// we should run the test from TestNgSuite that is testng.xml file as the data should be populated from there only.
 		System.out.println("The browser given in xml file is: "+browser);
 		System.out.println("The URL given in xml file is: "+url);
+		
 	}
 	
 	

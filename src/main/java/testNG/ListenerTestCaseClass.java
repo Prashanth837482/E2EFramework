@@ -10,11 +10,17 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class ListenerTestCaseClass {
+import com.aventstack.extentreports.Status;
+
+// we can also use below listeners annotation and specify listener class and run as TestNg Test this will also trigger listeners class.
+//@Listeners(testNG.TestNGListener.class)
+public class ListenerTestCaseClass{
 	public static WebDriver driver;
 	
+	// Run ListenerTestng.xml testng suite for listener to get triggered.
 	
 	@BeforeClass
 	public void setUpMethod() throws Exception {
@@ -26,6 +32,7 @@ public class ListenerTestCaseClass {
 			driver.manage().window().maximize();
 			System.out.println("Window maximized successfully.");
 			Thread.sleep(5000);
+			
 			
 		}
 		
@@ -40,6 +47,7 @@ public class ListenerTestCaseClass {
 		driver.close();
 	}
 	
+	// This method will be passed and triggers OnTestSuccess method from TestNgListener class.
 	@Test(priority = 0)
 	public void passMethod() {
 		
@@ -52,6 +60,7 @@ public class ListenerTestCaseClass {
 		// js code to scroll to a particular element
 		js.executeScript("arguments[0].scrollIntoView(true);", detectAgainElement);
 		System.out.println("Successfully Scrolled to the element");
+	
 		Thread.sleep(3000);
 		
 		// js code to highlight an element
@@ -68,7 +77,7 @@ public class ListenerTestCaseClass {
 		
 	}
 	
-	
+	// This method will be failed due to assertion error and triggers OnTestFailure method from TestNgListener class.
 	@Test(priority = 1)
 	public void failMethod() {
 		WebElement detectAgainElement= driver.findElement(By.xpath("//a[text()='Detect again']"));
@@ -76,6 +85,7 @@ public class ListenerTestCaseClass {
 		
 	}
 	
+	// This method will be skipped as it depends on above failed method and triggers OnTestSkipped method from TestNgListener class.
 	@Test(priority = 2, dependsOnMethods = "failMethod")
 	public void skipMethod() {
 		
