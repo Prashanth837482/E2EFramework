@@ -6,18 +6,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.log4testng.Logger;
 
 import com.aventstack.extentreports.Status;
 
+
+
 // we can also use below listeners annotation and specify listener class and run as TestNg Test this will also trigger listeners class.
 //@Listeners(testNG.TestNGListener.class)
-public class ListenerTestCaseClass{
+public class ListenerTestCaseClass extends ExtentReportManager{
 	public static WebDriver driver;
 	
 	// Run ListenerTestng.xml testng suite for listener to get triggered.
@@ -67,6 +71,7 @@ public class ListenerTestCaseClass{
 		js.executeScript("arguments[0].style.border='3px solid red'", detectAgainElement);
 		System.out.println("Successfully highlighted the element");
 		Thread.sleep(3000);
+		
 		
 		} 
 		

@@ -12,7 +12,6 @@
         <methods>
           <include name="setUpMethod"/>
           <include name="tearDownMethod"/>
-          <include name="passMethod"/>
           <include name="failMethod"/>
           <include name="skipMethod"/>
         </methods>
