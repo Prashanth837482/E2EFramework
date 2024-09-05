@@ -29,10 +29,22 @@ public class Polymorphism implements AnimalInterface{
 	
 	
 	public static void main (String[] args) {
+		
+		
+		
 		Polymorphism obj = new Polymorphism();
 		obj.animal();
 		obj.overLoadMethod();
 		obj.overLoadMethod("executed");
+		
+		
+		//Interface Cannot be instantiated directly. Classes that implement the interface provide the implementation for the methods.
+		//AnimalInterface obj1 = new AnimalInterface();
+		
+		//we can create object for extended class with reference of interface.
+		AnimalInterface obj1 = new Polymorphism();
+		obj1.animal();
+		
 	}
 
 }

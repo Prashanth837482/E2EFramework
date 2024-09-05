@@ -5,7 +5,8 @@ abstract class test {
 	abstract void animal();
 	// abstract class can contain constructors as well.
 	public test() {
-		System.out.println("abstract class constructor");
+		System.out.println("abs"
+				+ "tract class constructor");
 	}
 	
 	// abstract class can contain normal methods as well and can be overriden in the child class
@@ -13,6 +14,11 @@ abstract class test {
 		
 		System.out.println("normal method in abstract class");
 	}
+	public void normalMethod2() {
+		
+		System.out.println("normal method2 in abstract class");
+	}
+	
 }
 
  class Abstraction extends test{
@@ -42,11 +48,12 @@ abstract class test {
 		// creating object for extended class with extended class reference only.
 		Abstraction obj = new Abstraction();
 		obj.animal();
-		obj.normalMethod();
+		obj.normalMethod();		
 		// creating object for extended class with abstract class reference.
 		test obj1 = new Abstraction();
 		obj1.animal();
 		obj1.normalMethod();
+		obj1.normalMethod2();
 		
 		
 		// we cannot create an object for the abstract class using the abstract class reference.
