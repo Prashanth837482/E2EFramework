@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-07T16:35:49 IST" name="Default suite" finished-at="2024-09-07T16:35:49 IST" duration-ms="97">
+  <suite started-at="2024-09-07T16:46:50 IST" name="Default suite" finished-at="2024-09-07T16:46:50 IST" duration-ms="93">
     <groups>
     </groups>
-    <test started-at="2024-09-07T16:35:49 IST" name="Default test" finished-at="2024-09-07T16:35:49 IST" duration-ms="97">
-      <class name="javaCoding.IndexoftheFirstOccurrenceInAString">
-        <test-method signature="testing()[pri:0, instance:javaCoding.IndexoftheFirstOccurrenceInAString@6771beb3]" started-at="2024-09-07T16:35:49 IST" name="testing" finished-at="2024-09-07T16:35:49 IST" duration-ms="12" status="PASS">
+    <test started-at="2024-09-07T16:46:50 IST" name="Default test" finished-at="2024-09-07T16:46:50 IST" duration-ms="93">
+      <class name="javaCoding.LengthOfLastWord">
+        <test-method signature="LengthOfLastWordInString()[pri:0, instance:javaCoding.LengthOfLastWord@6771beb3]" started-at="2024-09-07T16:46:50 IST" name="LengthOfLastWordInString" finished-at="2024-09-07T16:46:50 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testing -->
-      </class> <!-- javaCoding.IndexoftheFirstOccurrenceInAString -->
+        </test-method> <!-- LengthOfLastWordInString -->
+      </class> <!-- javaCoding.LengthOfLastWord -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
