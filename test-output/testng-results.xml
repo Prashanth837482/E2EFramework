@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-01T18:15:35 IST" name="Default suite" finished-at="2024-09-01T18:15:35 IST" duration-ms="55">
+  <suite started-at="2024-09-07T11:09:01 IST" name="Default suite" finished-at="2024-09-07T11:09:01 IST" duration-ms="59">
     <groups>
     </groups>
-    <test started-at="2024-09-01T18:15:35 IST" name="Default test" finished-at="2024-09-01T18:15:35 IST" duration-ms="55">
-      <class name="javaCoding.SortCharactersByFrequency">
-        <test-method signature="sortChars()[pri:0, instance:javaCoding.SortCharactersByFrequency@6771beb3]" started-at="2024-09-01T18:15:35 IST" name="sortChars" finished-at="2024-09-01T18:15:35 IST" duration-ms="8" status="PASS">
+    <test started-at="2024-09-07T11:09:01 IST" name="Default test" finished-at="2024-09-07T11:09:01 IST" duration-ms="59">
+      <class name="javaCoding.ReverseWordsInString">
+        <test-method signature="reverseWordsInString()[pri:0, instance:javaCoding.ReverseWordsInString@6771beb3]" started-at="2024-09-07T11:09:01 IST" name="reverseWordsInString" finished-at="2024-09-07T11:09:01 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sortChars -->
-      </class> <!-- javaCoding.SortCharactersByFrequency -->
+        </test-method> <!-- reverseWordsInString -->
+      </class> <!-- javaCoding.ReverseWordsInString -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
