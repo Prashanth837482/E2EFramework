@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 13.066 s <<< FAILURE! - in TestSuite
-bearerTokenAuth(restAssured.RestAuthentication)  Time elapsed: 0.554 s  <<< FAILURE!
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.701 s <<< FAILURE! - in TestSuite
+bearerTokenAuth(restAssured.RestAuthentication)  Time elapsed: 0.427 s  <<< FAILURE!
 java.lang.AssertionError: Request failed expected [401] but found [200]
-	at restAssured.RestAuthentication.bearerTokenAuth(RestAuthentication.java:54)
+	at restAssured.RestAuthentication.bearerTokenAuth(RestAuthentication.java:55)
 
-OAuth2(restAssured.RestAuthentication)  Time elapsed: 0.46 s  <<< FAILURE!
+OAuth2(restAssured.RestAuthentication)  Time elapsed: 0.323 s  <<< FAILURE!
 java.lang.AssertionError: Request failed expected [401] but found [200]
-	at restAssured.RestAuthentication.OAuth2(RestAuthentication.java:84)
+	at restAssured.RestAuthentication.OAuth2(RestAuthentication.java:85)
 
