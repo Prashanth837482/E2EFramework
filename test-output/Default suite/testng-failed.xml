@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.ListenerTestCaseClass">
+      <class name="javaCoding.ExcelSheetColumnNumber">
         <methods>
-          <include name="setUpMethod"/>
-          <include name="tearDownMethod"/>
-          <include name="failMethod"/>
-          <include name="skipMethod"/>
+          <include name="ExcelSheetColumnNumberMethod"/>
         </methods>
-      </class> <!-- testNG.ListenerTestCaseClass -->
+      </class> <!-- javaCoding.ExcelSheetColumnNumber -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
