@@ -41,6 +41,9 @@ public class JavaScriptExecutorCommands {
 	@Test
 	public void ScrollToElement() {
 		
+		// for the explanation regarding js and the arguments refer below link
+		//https://chatgpt.com/c/66fd48b7-dde8-8002-9905-cec4f13c2189
+		
 		
 		try {
 		
