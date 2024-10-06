@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 		features = "src/main/resources/tryOut.feature",
 		// should provide only package where java files were there it automatically scans all the java files in the package
 		glue = "stepDefinitions",
-		
+		// tags should be mentioned along with the "@"
 		tags = "@regression or @sanity"
 		
 		
