@@ -45,6 +45,7 @@ class child extends ThisSuper{
 	}
 	
 	public child(String name) {
+		
 		this();  // this calls constructor of the current class
 		System.out.println("child parameterized constructor "+name);
 		

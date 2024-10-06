@@ -15,8 +15,10 @@ Feature: Title of your feature
  
   Scenario Outline: Launch Amazon and perform
     Given I Launch "<application>" application
-    #When I check for the <value> in step
-    #Then I verify the <status> in step
+    When I create and pass DataTable data
+    | Name | ID | Age |
+    | Prashanth | 1177 | 24 |
+    | Vangapelli | 1188 | 26 |
 
     Examples: 
       | application  | 

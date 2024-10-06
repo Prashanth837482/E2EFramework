@@ -1,9 +1,13 @@
 package stepDefinitions;
 
+import java.util.List;
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 
 public class StepDefinitions {
 	
@@ -30,5 +34,29 @@ public class StepDefinitions {
 			}
 		
 	}
+	
+	
+	@When("I create and pass DataTable data")
+	public void i_create_and_pass_data_table_data(io.cucumber.datatable.DataTable dataTable) {
+		
+		try {
+			
+			List<Map<String,String>> maps = dataTable.asMaps(String.class, String.class);
+			
+			for(Map<String,String> map: maps) {
+				System.out.println(map); // printing each map
+				for(String value:map.values()) {
+					System.out.println(value); // printing values of each map
+				}
+			}
+			
+		}
+		
+		catch(Exception e) {
+			throw e;
+		}
+		
+	}
+
 
 }
