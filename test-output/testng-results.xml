@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-21T22:17:01 IST" name="Default suite" finished-at="2024-09-21T22:17:01 IST" duration-ms="104">
+  <suite started-at="2024-10-06T15:47:56 IST" name="Default suite" finished-at="2024-10-06T15:48:11 IST" duration-ms="14703">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinitions.BddTestNgRunnerClass@15ca7889]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-09-21T22:17:01 IST" name="Default test" finished-at="2024-09-21T22:17:01 IST" duration-ms="104">
-      <class name="javaCoding.ExcelSheetColumnNumber">
-        <test-method signature="ExcelSheetColumnNumberMethod()[pri:0, instance:javaCoding.ExcelSheetColumnNumber@3cd3e762]" started-at="2024-09-21T22:17:01 IST" name="ExcelSheetColumnNumberMethod" finished-at="2024-09-21T22:17:01 IST" duration-ms="20" status="PASS">
+    <test started-at="2024-10-06T15:47:56 IST" name="Default test" finished-at="2024-10-06T15:48:11 IST" duration-ms="14703">
+      <class name="stepDefinitions.BddTestNgRunnerClass">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:stepDefinitions.BddTestNgRunnerClass@15ca7889]" started-at="2024-10-06T15:47:56 IST" name="setUpClass" finished-at="2024-10-06T15:47:56 IST" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@53dfacba]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExcelSheetColumnNumberMethod -->
-      </class> <!-- javaCoding.ExcelSheetColumnNumber -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinitions.BddTestNgRunnerClass@15ca7889]" started-at="2024-10-06T15:47:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-06T15:48:02 IST" duration-ms="6013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Launch Amazon and perform"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Title of your feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:stepDefinitions.BddTestNgRunnerClass@15ca7889]" started-at="2024-10-06T15:48:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-06T15:48:11 IST" duration-ms="8430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Launch Amazon and perform"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Title of your feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:stepDefinitions.BddTestNgRunnerClass@15ca7889]" started-at="2024-10-06T15:48:11 IST" name="tearDownClass" finished-at="2024-10-06T15:48:11 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- stepDefinitions.BddTestNgRunnerClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

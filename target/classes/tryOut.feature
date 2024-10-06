@@ -12,7 +12,7 @@ Feature: Title of your feature
     #Then I validate the outcomes
     #And check more outcomes
 
- 
+ @regression
   Scenario Outline: Launch Amazon and perform
     Given I Launch "<application>" application
     When I create and pass DataTable data
@@ -23,4 +23,16 @@ Feature: Title of your feature
     Examples: 
       | application  | 
       | Amazon |   
+      
+    @sanity  
+	  Scenario Outline: Launch Amazon and perform
+	  Given I Launch "<application>" application
+	  When I create and pass DataTable data
+	  | Name | ID | Age |
+	  | Prashanth | 1177 | 24 |
+	  | Vangapelli | 1188 | 26 |
+	
+	  Examples: 
+	    | application  | 
+	    | Amazon |  
        
