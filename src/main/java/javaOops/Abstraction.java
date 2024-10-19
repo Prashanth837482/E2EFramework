@@ -5,8 +5,7 @@ abstract class test {
 	abstract void animal();
 	// abstract class can contain constructors as well.
 	public test() {
-		System.out.println("abs"
-				+ "tract class constructor");
+		System.out.println("abstract class constructor");
 	}
 	
 	// abstract class can contain normal methods as well and can be overriden in the child class
@@ -58,6 +57,7 @@ abstract class test {
 		
 		// we cannot create an object for the abstract class using the abstract class reference.
 		// test object = new test();
+		
 		
 	}
 

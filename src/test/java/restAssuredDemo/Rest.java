@@ -96,6 +96,7 @@ public class Rest {
 		obj.put("last_name", "vangapelli");
 		obj.put("Avatar", "ttps://reqres.in/img/faces/2-image.jpg");
 		
+		
 		JSONObject obj2=new JSONObject();
 		obj2.put("url", "prash.com");
 		obj2.put("text", "iam updating");

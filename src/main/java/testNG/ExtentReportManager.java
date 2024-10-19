@@ -75,7 +75,7 @@ public class ExtentReportManager implements ITestListener{
 	public void onFinish(ITestContext context) {
 		  System.out.println("Execution Finished....");
 		  extent.flush();
-		  
-				 
+		  //ExtentReports stores the test results in memory until you call extent.flush(). This method writes all the accumulated test information from memory to the physical report file (usually in HTML format).
+		  //Extent.flush() ensures the report is complete and up-to-date with all the test logs, statuses, and steps from the execution process.		 
 		  }
 }

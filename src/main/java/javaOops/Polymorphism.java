@@ -41,7 +41,7 @@ public class Polymorphism implements AnimalInterface{
 		//Interface Cannot be instantiated directly. Classes that implement the interface provide the implementation for the methods.
 		//AnimalInterface obj1 = new AnimalInterface();
 		
-		//we can create object for extended class with reference of interface.
+		//we can create object for implemented class with reference of interface.
 		AnimalInterface obj1 = new Polymorphism();
 		obj1.animal();
 		

@@ -12,6 +12,8 @@ import io.cucumber.testng.CucumberOptions;
 		// tags should be mentioned along with the "@"
 		tags = "@regression or @sanity"
 		
+		// plugin = {"pretty", "html:target/cucumber-reports"}, // Optional: for report generation
+		
 		
 		)
 
