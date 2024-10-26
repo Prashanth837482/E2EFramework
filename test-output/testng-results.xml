@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-19T17:29:21 IST" name="Default suite" finished-at="2024-10-19T17:29:21 IST" duration-ms="54">
+  <suite started-at="2024-10-22T11:36:51 IST" name="Default suite" finished-at="2024-10-22T11:37:00 IST" duration-ms="8329">
     <groups>
     </groups>
-    <test started-at="2024-10-19T17:29:21 IST" name="Default test" finished-at="2024-10-19T17:29:21 IST" duration-ms="54">
-      <class name="javaCoding.ClosestToZero">
-        <test-method signature="ClosestToZeroMeth()[pri:0, instance:javaCoding.ClosestToZero@24aed80c]" started-at="2024-10-19T17:29:21 IST" name="ClosestToZeroMeth" finished-at="2024-10-19T17:29:21 IST" duration-ms="9" status="PASS">
+    <test started-at="2024-10-22T11:36:51 IST" name="Default test" finished-at="2024-10-22T11:37:00 IST" duration-ms="8329">
+      <class name="testNG.CarNames">
+        <test-method signature="printNames()[pri:0, instance:testNG.CarNames@710f4dc7]" started-at="2024-10-22T11:36:51 IST" name="printNames" finished-at="2024-10-22T11:37:00 IST" duration-ms="8244" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClosestToZeroMeth -->
-      </class> <!-- javaCoding.ClosestToZero -->
+        </test-method> <!-- printNames -->
+      </class> <!-- testNG.CarNames -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
