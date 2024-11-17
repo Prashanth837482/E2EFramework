@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests" thread-count="3">
+<!-- Tests will be run in parallel as we have "tests" in the above tag. and methods will have 3 separate thread as mentioned above -->
+
+  <test thread-count="5" name="chromeTest">
+  <!-- Parameters are given with the separate test tag to separately initiate and mention the browser -->
+  <!-- if browser is given at suite level it will be same through out the suite, so that only givne separatley for each test tag -->
+  <parameter name ="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testNgParallelTest.ParallelTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="edgeTest">
+   <parameter name ="browser" value="edge"></parameter>
+    <classes>
+      <class name="testNgParallelTest.ParallelTest"/>
+    </classes>
+  </test> 
+  
+  
+  <test thread-count="5" name="fireFoxTest">
+   <parameter name ="browser" value="fireFox"></parameter>
+    <classes>
+      <class name="testNgParallelTest.ParallelTest"/>
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->

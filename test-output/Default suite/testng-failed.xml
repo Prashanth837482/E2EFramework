@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="javaCoding.InformaticaRest">
+      <class name="javaScriptExecutor.JavaScriptExecutorCommands">
         <methods>
-          <include name="getMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="ScrollToElement"/>
+          <include name="setUpMethod"/>
         </methods>
-      </class> <!-- javaCoding.InformaticaRest -->
+      </class> <!-- javaScriptExecutor.JavaScriptExecutorCommands -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

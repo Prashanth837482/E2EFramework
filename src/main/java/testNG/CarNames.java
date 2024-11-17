@@ -10,16 +10,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class CarNames {
-	public WebDriver driver;
+	//public WebDriver driver;
 	@Test
 	public void printNames() throws InterruptedException {
 		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver;
 		String url ="https://www.carandbike.com/new-cars/models/2";
-		System.setProperty("webdriver.chrome.driver", "C:\\AutomationJava\\Software\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "C:\\AutomationJava\\Software\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+	
 		driver= new ChromeDriver();
 		
-		driver.get(url);
+		//driver.get(url);
 		
 		Thread.sleep(3000);
 		
