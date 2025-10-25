@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="IETest(failed)">
-    <parameter name="browser" value="InternetExplorer"/>
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="URL" value="chrome.exe"/>
+  <listeners>
+    <listener class-name="testNG.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testNgParallelTest.ParallelTest">
+      <class name="testNG.ListenerTestCaseClass">
         <methods>
-          <include name="browserSetUp"/>
-          <include name="testMethod"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="passMethod"/>
+          <include name="failMethod"/>
+          <include name="skipMethod"/>
         </methods>
-      </class> <!-- testNgParallelTest.ParallelTest -->
+      </class> <!-- testNG.ListenerTestCaseClass -->
     </classes>
-  </test> <!-- IETest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -52,6 +52,8 @@ public class JavaScriptExecutorCommands {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
 		// js code to scroll to a particular element
+		
+		
 		js.executeScript("arguments[0].scrollIntoView(true);", detectAgainElement);
 		System.out.println("Successfully Scrolled to the element");
 		Thread.sleep(3000);

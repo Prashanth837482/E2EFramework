@@ -1,10 +1,23 @@
 
+
 package restAssured;
 
+import java.util.List;
+import java.util.Map;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import io.restassured.RestAssured;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -85,6 +98,7 @@ public class RestAuthentication {
 		Assert.assertEquals(200, response.getStatusCode(),"Request failed");
 		System.out.println(response.asPrettyString());
 		
+		
 		// this will retrieve the list of repository names from the response that we have in github
 		System.out.println(response.jsonPath().getList("name"));
 		System.out.println(response.jsonPath().getString("owner.login"));
@@ -118,6 +132,80 @@ public class RestAuthentication {
 		
 		
 	}
+	
+	//@Test(priority=5)
+	public void requestWithAllParts() {
+		
+		// This Given When Then can be used for all authentications which simplifies the steps but can go with normal flow for better understanding
+		
+		RestAssured.baseURI="https://postman-echo.com/basic-auth";
+		Header h1 = new Header("content-Type", "application/json");	
+		Header h2 = new Header("content-Type", "application/json");
+		Headers headers = new Headers(h1,h2);
+		RequestSpecification spec = RestAssured.given();
+		spec.headers(headers);
+		spec.body("test").auth().basic("test", "test");
+		spec.queryParam("user", 1);
+		Response rs = spec.get();
+		rs.statusCode();
+		
+		
+	}
+	
+	@Test(priority = 5)
+	public void ParseJsonResponseAndValidate() throws JsonMappingException, JsonProcessingException {
+	    
+	        String json = "{\n" +
+	                "    \"Id\": 123,\n" +
+	                "    \"CustomFields\": [\n" +
+	                "        {\n" +
+	                "            \"Name\": \"apple\",\n" +
+	                "            \"Color\": \"Red\"\n" +
+	                "        },\n" +
+	                "        {\n" +
+	                "            \"Name\": \"banana\",\n" +
+	                "            \"Color\": \"Yellow\"\n" +
+	                "        }\n" +
+	                "    ]\n" +
+	                "}";
+
+	        // Parsing json reponse using jsonArray and objects (org.json dependency or package)
+	        
+	        JSONObject obj = new JSONObject(json);
+	        JSONArray fields = obj.getJSONArray("CustomFields");
+
+	        for (int i = 0; i < fields.length(); i++) {
+	            JSONObject field = fields.getJSONObject(i);
+	            if ("apple".equalsIgnoreCase(field.getString("Name"))) {
+	                System.out.println("Color of apple: " + field.getString("Color"));
+	            }
+	        }
+	        
+	        
+	        // Parsing json reponse using objectmapper 
+	        
+	        ObjectMapper mapper = new ObjectMapper();
+	        // Parse JSON into a Map
+	        Map<String, Object> root = mapper.readValue(json, new TypeReference<Map<String, Object>>() {});
+
+	        // Get the CustomFields list
+	        List<Map<String, Object>> customFields = (List<Map<String, Object>>) root.get("CustomFields");
+	        
+	        // Loop through and find "apple"
+	        for (Map<String, Object> field : customFields) {
+	            if ("apple".equalsIgnoreCase((String) field.get("Name"))) {
+	                System.out.println("Color of apple: " + field.get("Color"));
+	            }
+	        }
+	        
+	        // Using dot groovy notation available in jsonPath to find an element
+	        JsonPath path = new JsonPath(json);
+	        String color = path.get("CustomFields.find {it.Name == 'apple' }.Color");
+	        System.out.println(color);
+	    
+	}
+	
+
 	
 	
 }

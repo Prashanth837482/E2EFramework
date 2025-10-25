@@ -19,7 +19,9 @@ public class ClosestToZero {
 			}
 		}
 		
-		System.out.println("closest number to zero in input: "+num1);
+		System.out.println("closest number to zero in "
+				+ ""
+				+ "input: "+num1);
 	}
 
 }

@@ -7,12 +7,12 @@ import net.bytebuddy.implementation.bind.annotation.Super;
 
 
 public class TestClass{
-	PageClass pageClass;
+	PageClass pageClass = new PageClass();
 
 	@Test
 	public void testLogin() {
 		
-		//System.out.println(PageClass.userName);
-		//System.out.println(passWord);
+		System.out.println(pageClass.userName);
+		System.out.println(pageClass.passWord);
 	}
 }

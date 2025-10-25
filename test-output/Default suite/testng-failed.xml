@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="javaScriptExecutor.JavaScriptExecutorCommands">
+      <class name="javaCoding.dataTypesAndCollections">
         <methods>
-          <include name="tearDownMethod"/>
-          <include name="ScrollToElement"/>
-          <include name="setUpMethod"/>
+          <include name="set"/>
+          <include name="Map"/>
         </methods>
-      </class> <!-- javaScriptExecutor.JavaScriptExecutorCommands -->
+      </class> <!-- javaCoding.dataTypesAndCollections -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

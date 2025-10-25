@@ -52,6 +52,7 @@ abstract class test {
 		test obj1 = new Abstraction();
 		obj1.animal();
 		obj1.normalMethod();
+		
 		obj1.normalMethod2();
 		
 		

@@ -12,6 +12,7 @@ public class coomonSuffix {
 	@Test
 	public void commonSuffixFunc() {
 		String[] input = {"swimming","jumping","running"};
+		
 		Arrays.sort(input);
 		String firstElement = input[0];
 		String output ="";
