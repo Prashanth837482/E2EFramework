@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-26T16:51:12 IST" name="Default suite" finished-at="2025-10-26T16:51:12 IST" duration-ms="48">
+  <suite started-at="2025-11-03T07:19:21 IST" name="Default suite" finished-at="2025-11-03T07:19:21 IST" duration-ms="86">
     <groups>
     </groups>
-    <test started-at="2025-10-26T16:51:12 IST" name="Default test" finished-at="2025-10-26T16:51:12 IST" duration-ms="48">
-      <class name="javaCoding.findMissingNumberInArray">
-        <test-method signature="findMissingNumberInArray()[pri:0, instance:javaCoding.findMissingNumberInArray@2de23121]" started-at="2025-10-26T16:51:12 IST" name="findMissingNumberInArray" finished-at="2025-10-26T16:51:12 IST" duration-ms="7" status="PASS">
+    <test started-at="2025-11-03T07:19:21 IST" name="Default test" finished-at="2025-11-03T07:19:21 IST" duration-ms="86">
+      <class name="javaCoding.sumOfTwoIndicesInArray">
+        <test-method signature="sumOfTwoIndicesInArrayToGetTarget()[pri:0, instance:javaCoding.sumOfTwoIndicesInArray@63475ace]" started-at="2025-11-03T07:19:21 IST" name="sumOfTwoIndicesInArrayToGetTarget" finished-at="2025-11-03T07:19:21 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- findMissingNumberInArray -->
-      </class> <!-- javaCoding.findMissingNumberInArray -->
+        </test-method> <!-- sumOfTwoIndicesInArrayToGetTarget -->
+        <test-method signature="sumOfTwoNumbersInArrayToGetTarget()[pri:0, instance:javaCoding.sumOfTwoIndicesInArray@63475ace]" started-at="2025-11-03T07:19:21 IST" name="sumOfTwoNumbersInArrayToGetTarget" finished-at="2025-11-03T07:19:21 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfTwoNumbersInArrayToGetTarget -->
+      </class> <!-- javaCoding.sumOfTwoIndicesInArray -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

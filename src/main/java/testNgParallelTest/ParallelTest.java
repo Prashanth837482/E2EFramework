@@ -8,9 +8,11 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.checkerframework.checker.units.qual.t;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -75,6 +77,18 @@ public class ParallelTest {
 		
 		System.out.println(driver.manage().window().getSize());
 		//driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		
+		//To delete cookies
+		driver.manage().deleteAllCookies();
+		//To set the size of the window
+		Dimension d = new Dimension(500, 500);
+		driver.manage().window().setSize(d);
+		Thread.sleep(2000);
+		//To set the position of the window
+		Point p = new Point(250, 250);
+		driver.manage().window().setPosition(p);
+		Thread.sleep(2000);
+
 		
 		
 		// To open a new window 

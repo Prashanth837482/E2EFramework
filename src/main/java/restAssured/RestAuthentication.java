@@ -21,6 +21,8 @@ import io.restassured.http.Headers;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import static org.hamcrest.Matchers.*;
+
 
 public class RestAuthentication {
 
@@ -205,7 +207,21 @@ public class RestAuthentication {
 	    
 	}
 	
-
-	
+	@Test(priority = 6)
+	public void RestAssuredTopics() {
+		//{path} is dynamic path param
+		RestAssured.baseURI = "https://postman-echo.com/{path}";
+		// https://postman-echo.com/basic-auth?test=value
+		RestAssured.given().pathParam("path", "basic-auth").queryParam("test", "value")
+		.header("content-type","application/json")
+		// to set cookies
+		.cookie("session_id", "12345") 
+		.body(" ")
+		.when()
+		.get()
+		.then()
+		// import static org.hamcrest.Matchers.*;  -> for equalTo fun
+		.body("path", equalTo("value"));
+	}
 	
 }

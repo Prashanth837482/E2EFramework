@@ -63,6 +63,13 @@ public class JavaScriptExecutorCommands {
 		System.out.println("Successfully highlighted the element");
 		Thread.sleep(3000);
 		
+		
+		//To scroll down
+		js.executeScript("window.scrollBy(0,500)");
+		Thread.sleep(3000);
+		//To scroll up
+		js.executeScript("window.scrollBy(0,-500)");
+		
 		} 
 		
 		catch (InterruptedException e) {

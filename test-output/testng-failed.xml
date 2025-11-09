@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="javaCoding.dataTypesAndCollections">
+      <class name="javaCoding.sumOfTwoIndicesInArray">
         <methods>
-          <include name="set"/>
-          <include name="Map"/>
+          <include name="sumOfTwoIndicesInArray"/>
         </methods>
-      </class> <!-- javaCoding.dataTypesAndCollections -->
+      </class> <!-- javaCoding.sumOfTwoIndicesInArray -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
