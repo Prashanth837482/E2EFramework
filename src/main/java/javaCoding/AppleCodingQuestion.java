@@ -39,13 +39,13 @@ public class AppleCodingQuestion {
 		
 		int overlap1 = 0;
 		for(int i =1; i<=Math.min(n1, n2);i++) {
-			if(str1.substring(n1-i).equals(str2.subSequence(0, i))) {
+			if(str1.substring(n1-i).equals(str2.substring(0, i))) {
 				overlap1 = i;
 			}
 		}
 		int overlap2 = 0;
 		for(int i =1; i<=Math.min(n1, n2);i++) {
-			if(str2.substring(n2-i).equals(str1.subSequence(0, i))) {
+			if(str2.substring(n2-i).equals(str1.substring(0, i))) {
 				overlap2 = i;
 			}
 		}
