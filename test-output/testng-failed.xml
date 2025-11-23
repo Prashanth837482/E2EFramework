@@ -6,8 +6,8 @@
       <class name="pageObjectModel.LoginPageTest">
         <methods>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="init"/>
+          <include name="tearDown"/>
           <include name="testLogin"/>
         </methods>
       </class> <!-- pageObjectModel.LoginPageTest -->

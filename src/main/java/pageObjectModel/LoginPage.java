@@ -10,15 +10,27 @@ public class LoginPage extends BasePage {
     private By password = By.xpath("//input[@name='password']");
     private By loginButton = By.xpath("//button[@type='submit']");
     private By dashboard = By.xpath("//div[contains(@class,'userarea')]");
+    private By searchSvgIcon = By.xpath("//div[contains(@class,'search')]/*[name()='svg']");
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-    public void loginToApplication(String user, String pass) {
-        type(userName, user);
-        type(password, pass);
-        click(loginButton);
-        waitForVisible(dashboard);
+    public boolean loginToApplication(String user, String pass) {
+    	
+    	try {
+	        type(userName, user);
+	        type(password, pass);
+	        click(loginButton);
+	        waitForVisible(dashboard);
+	        return true;
+    	}
+    	catch(Exception e){
+    		return false;
+    	}
+    }
+    
+    public boolean validateSearchSvgIcon() {
+    	return validateSvgIcon(searchSvgIcon);
     }
 }
