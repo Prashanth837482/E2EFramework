@@ -19,7 +19,7 @@ public class BaseTest {
         ConfigReader.loadConfig();
         driver = DriverManager.getDriver();
         driver.get(ConfigReader.get("url"));
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         
     }
 

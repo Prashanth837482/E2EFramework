@@ -27,5 +27,11 @@ public class LoginPageTest extends BaseTest{
 		boolean loginStatus = loginPage.loginToApplication(ConfigReader.get("username"), ConfigReader.get("password"));
 		Assert.assertTrue(loginStatus,"Login failed..");
 		Assert.assertTrue(loginPage.validateSearchSvgIcon(), "Failed to validate the Search Svg Icon");
+		Assert.fail();
+	}
+	@Test(groups="test")
+	public void testLogin2() {		
+		
+		Assert.fail();
 	}
 }

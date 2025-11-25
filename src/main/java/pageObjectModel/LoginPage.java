@@ -25,6 +25,9 @@ public class LoginPage extends BasePage {
 	        waitForVisible(dashboard);
 	        return true;
     	}
+    	// https://chatgpt.com/c/6925de02-b628-8322-bbe9-2692a5da4f3b
+    	// TimeOutException or any exception occured in type, click methods will not throw error as we are catching exception below
+    	// we have to remove below catch to block to capture the exceptions.
     	catch(Exception e){
     		return false;
     	}
